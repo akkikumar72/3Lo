@@ -8,7 +8,7 @@ var profileData;
 passport.use(new AtlassianStrategy({
   clientID: 'keeL5Ne1bv4bwhskjKGRdYZ1kkOgQufz',
   clientSecret: 'k-UOpaxpek7kFDIYOg9Z9kbXDlmjyJzSdUohOxLsSy0lCOQyAZxHxgKKd3LtS2gI',
-  callbackURL: 'http://localhost:8080/auth/atlassian/callback',
+  callbackURL: '/auth/atlassian/callback',
   scope: 'offline_access read:me',
 }, (accessToken, refreshToken, profile, cb) => {
   // Profile should be stored to the database in real applications
